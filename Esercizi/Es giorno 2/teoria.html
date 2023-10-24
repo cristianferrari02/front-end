@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Mia tabella</caption>
+        <tr>
+            
+            <th>nome</th>
+            <th>cognome</th>
+            <th>città</th>
+        </tr>
+        <tr>
+            <td>cristian</td>
+            <td>ferrari</td>
+            <td>reggio</td>
+        </tr>
+        <tr>
+            <td>francesco</td>
+            <td>carbini</td>
+            <td>reggio</td>
+        </tr>
+        <!--unisce due o più righe (cancellare un td)-->
+        <tr>
+            <td colspan="2">marco</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <hr />
+
+    <table>
+        <caption>Mia tabella</caption>
+        <thead>
+            
+            <tr>
+                <th>nome</th>
+                <th>cognome</th>
+                <th>città</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cristian</td>
+                <td>ferrari</td>
+                <td>reggio</td>
+            </tr>
+            <tr>
+                <td>francesco</td>
+                <td>carbini</td>
+                <td>reggio</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">marco</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr />
+    <h1> form </h1>
+
+    <!--i dati con "get" vengono inviati direttamente a miapagina.php-->
+    <form method="get" action="miapagina.php" >
+        <fieldset>
+            <legend>mio form</legend>
+            <label for="mionome">Nome:</label>
+            <!--"autofocus" ti permette di aprire la pagina già con il puntatore selezionato-->
+            <input type="text" name="nome" id="mionome"autofocus>
+            <label for="miocognome">Cognome:</label>
+            <input type="text" name="cognome" id="miocognome">
+            <label for="miaemail"> Email: </label>
+            <input type="email" name="email" id="miaemail">
+            <label for="miapassword">Password:</label>
+            <input type="password"  name="password" id="miapassword">
+            <button type="submit">Invia</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <hr />
+   
+    <form method="get" action="miapagina.php" >
+        <fieldset>
+            <legend>mio form</legend>
+            <label for="mionome">Nome:</label>
+            <input type="text" name="nome" id="mionome">
+            <label for="miocognome">Cognome:</label>
+            <input type="text" name="cognome" id="miocognome">
+            <label for="miaemail"> Email: </label>
+            <input type="email" name="email" id="miaemail">
+            <label for="miapassword">Password:</label>
+            <!--"placeholder" ti permette di inserire la scritta come sfondo-->
+            <input type="password" placeholder=password name="password" id="miapassword">
+            <button type="submit">Invia</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <hr />
+    
+    <form method="get" action="miapagina.php" >
+        <fieldset>
+            <legend>mio form</legend>
+            <label for="mionome">Nome:</label>
+            <input type="text" name="nome" id="mionome">
+            <label for="miocognome">Cognome:</label>
+            <input type="text" name="cognome" id="miocognome">
+            <label for="miaemail"> Email: </label>
+            <input type="email" name="email" id="miaemail">
+            <label for="miapassword">Password:</label>
+            <input type="password" name="password" id="miapassword">
+            <!--disabilita la cella "disabled"-->
+            <button type="submit"disabled>Invia</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <hr />
+    
+    <form method="get" action="miapagina.php" >
+        <fieldset>
+            <legend>mio form</legend>
+            <label for="mionome">Nome:</label>
+            <input type="text" name="nome" id="mionome">
+            <label for="miocognome">Cognome:</label>
+            <input type="text" name="cognome" id="miocognome">
+            <label for="miaemail"> Email: </label>
+            <input type="email" name="email" id="miaemail" value="cristianferrari02@gmail.com">
+            <label for="miapassword">Password:</label>
+            <input type="password" name="password" id="miapassword">
+            <button type="submit">Invia</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+    <hr />
+    <!--area di testo-->
+    <form method="get" acrion="miapagina.php">
+        <fieldset>
+            <textarea name="note" placeholder="Inserisci note">
+
+            </textarea>
+        </fieldset>
+    </form>
+    
+    <hr />
+    <form method="get" acrion="miapagina.php">
+        <fieldset>
+            <label for="mieilinguaggi">linguaggi
+
+            </textarea>
+        </fieldset>
+    </form>
+
+
+    <hr />
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.9763556311304!2d12.474813212054569!3d41.87185516568463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6173fb8c8ea7%3A0x1a413c9507f97391!2sEPICODE!5e0!3m2!1sit!2sit!4v1698144859078!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr />
+
+    <div id="header">
+        <div id="nav">
+            <!-- logo e menu di navigazione-->
+        </div>
+    </div>
+    <div id="main">
+        <!--contenuto della pagina-->
+    </div>
+    <div id="footer">
+        <!--riferimenti e indirizzi della pagina-->
+    </div>
+
+    <hr />
+
+    <!--nuovo metodo di cassificazione-->
+    <header>
+        <nav>
+            <!-- logo e menu di navigazione-->
+        </nav>
+    </header>
+    <main>
+        <!--contenuto della pagina-->
+    </main>
+    <footer>
+        <!--riferimenti e indirizzi della pagina-->
+    </footer>
+
+
+</body>
+</html>
